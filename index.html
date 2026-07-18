@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloodshot — Arquitectura Digital con Intención</title>
+  <meta name="description" content="Estudio boutique de diseño web en Monterrey. Sitios rápidos, seguros y diseñados para convertir. Elegance often lies in simplicity.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ───────────────────────────────────────── -->
+  <nav class="site-nav" id="siteNav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        Bloodshot<span class="dot"></span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto" class="nav-cta nav-cta-desktop">Iniciar proyecto</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── MOBILE MENU ──────────────────────────────────────── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#proyectos">Proyectos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#precios">Precios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+
+  <!-- ─── HERO ─────────────────────────────────────────────── -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <p class="eyebrow hero-eyebrow reveal">Estudio digital boutique</p>
+
+      <h1 class="hero-title reveal reveal-delay-1">
+        Cada línea de código tiene un propósito.
+      </h1>
+
+      <hr class="hero-rule reveal reveal-delay-2">
+
+      <p class="hero-subtitle reveal reveal-delay-2">
+        Diseñamos arquitecturas digitales que transforman visitantes en clientes — rápidas, seguras y sin nada que sobre.
+      </p>
+
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#contacto" class="btn-primary">
+          Iniciar proyecto
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a href="#proyectos" class="btn-secondary">Ver proyectos</a>
+      </div>
+
+      <p class="hero-location reveal reveal-delay-4">Monterrey, Nuevo León, MX</p>
+    </div>
+  </section>
+
+  <!-- ─── CLIENTS STRIP ────────────────────────────────────── -->
+  <section class="clients-strip">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span class="client-name">Botanero Limón</span>
+        <span class="client-name">Nue Lingerie</span>
+        <span class="client-name">Boimsa</span>
+        <span class="client-name">Gabrielo's Pizza</span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span class="client-name">Botanero Limón</span>
+        <span class="client-name">Nue Lingerie</span>
+        <span class="client-name">Boimsa</span>
+        <span class="client-name">Gabrielo's Pizza</span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span class="client-name">Botanero Limón</span>
+        <span class="client-name">Nue Lingerie</span>
+        <span class="client-name">Boimsa</span>
+        <span class="client-name">Gabrielo's Pizza</span>
+      </div>
+      <div class="marquee-content" aria-hidden="true">
+        <span class="client-name">Botanero Limón</span>
+        <span class="client-name">Nue Lingerie</span>
+        <span class="client-name">Boimsa</span>
+        <span class="client-name">Gabrielo's Pizza</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── STATEMENT ────────────────────────────────────────── -->
+  <section class="statement">
+    <div class="statement-inner">
+      <blockquote class="statement-quote reveal">
+        «Elegance often lies in simplicity.»
+      </blockquote>
+      <p class="statement-body reveal reveal-delay-1">
+        Esa es la premisa que guía cada proyecto. No sumamos por sumar. Cada elemento existe porque cumple una función — lo que no necesita estar, simplemente no está. Así construimos sitios que funcionan, convierten y perduran.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── SERVICES ─────────────────────────────────────────── -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Lo que hacemos</p>
+        <h2 class="section-title">Tres disciplinas, un solo objetivo</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-number">01</div>
+          <h3 class="service-title">Diseño Web</h3>
+          <p class="service-description">La imagen y la ingeniería que tu negocio demanda. Sitios veloces, seguros y diseñados con un solo objetivo: convertir visitantes en clientes.</p>
+          <a href="#precios" class="service-link">
+            Ver paquetes
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-number">02</div>
+          <h3 class="service-title">E-commerce</h3>
+          <p class="service-description">Tiendas Shopify optimizadas para escalar tu facturación. Del catálogo al checkout, cada paso diseñado para eliminar fricción y cerrar ventas.</p>
+          <a href="#precios" class="service-link">
+            Ver paquetes
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-number">03</div>
+          <h3 class="service-title">Correos Empresariales</h3>
+          <p class="service-description">Tu dominio, tu identidad, tu bandeja. Comunicación profesional desde el primer correo — con la seguridad y la infraestructura de Google.</p>
+          <a href="#precios" class="service-link">
+            Ver paquetes
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROCESS ──────────────────────────────────────────── -->
+  <section class="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2 class="section-title">Cuatro principios, cero concesiones</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Ingeniería de Conversión</h3>
+          <p class="step-description">Combinamos psicología del consumidor con arquitectura de interfaz. Cada decisión de diseño apunta a un resultado medible.</p>
+        </div>
+
+        <div class="process-step reveal reveal-delay-1">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Código Limpio</h3>
+          <p class="step-description">Eficiente para máquinas, escalable para humanos. Sin bloatware, sin dependencias innecesarias — solo lo que el proyecto necesita.</p>
+        </div>
+
+        <div class="process-step reveal reveal-delay-2">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Obsesión por la Velocidad</h3>
+          <p class="step-description">Assets comprimidos, servidores optimizados, carga instantánea. Especialmente donde más importa: en conexiones móviles.</p>
+        </div>
+
+        <div class="process-step reveal reveal-delay-3">
+          <div class="step-number">04</div>
+          <h3 class="step-title">Seguridad Nativa</h3>
+          <p class="step-description">Desde el servidor hasta la encriptación SSL. Tu negocio y los datos de tus clientes, protegidos por diseño desde el primer día.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PORTFOLIO ────────────────────────────────────────── -->
+  <section class="portfolio" id="proyectos">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Proyectos seleccionados</p>
+        <h2 class="section-title">El trabajo habla.</h2>
+      </div>
+
+      <div class="portfolio-grid reveal">
+        <div class="project-card">
+          <img src="assets/img/botanero-boimsa.png" alt="Botanero Limón & Boimsa — Identidad y sitio web">
+          <div class="project-overlay">
+            <span class="project-client">Botanero Limón & Boimsa</span>
+            <span class="project-type">Identidad · Sitio Web</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/img/nue-lingerie.png" alt="Nue Lingerie — E-commerce">
+          <div class="project-overlay">
+            <span class="project-client">Nue Lingerie</span>
+            <span class="project-type">E-commerce · Shopify</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/img/gabrielos-pizza.png" alt="Gabrielo's Pizza — Marca y sitio web">
+          <div class="project-overlay">
+            <span class="project-client">Gabrielo's Pizza</span>
+            <span class="project-type">Marca · Sitio Web</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PRICING ──────────────────────────────────────────── -->
+  <section class="pricing" id="precios">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Inversión</p>
+        <h2 class="section-title">Transparencia desde el inicio</h2>
+      </div>
+
+      <div class="pricing-tabs reveal" role="tablist">
+        <button class="tab-btn active" data-tab="web" role="tab">Diseño Web</button>
+        <button class="tab-btn" data-tab="ecommerce" role="tab">E-commerce</button>
+        <button class="tab-btn" data-tab="correos" role="tab">Correos</button>
+      </div>
+
+      <!-- ── Diseño Web ── -->
+      <div class="pricing-panel active" id="panel-web">
+        <div class="price-card reveal">
+          <h3 class="price-name">Express</h3>
+          <div class="price-amount"><span class="currency">$</span>3,199<span class="currency"> MXN</span></div>
+          <p class="price-period">Pago único</p>
+          <p class="price-ideal">Ideal para validar ideas y capturar leads.</p>
+          <ul class="price-features">
+            <li>Hasta 2 secciones de contenido</li>
+            <li>Galería de hasta 10 imágenes</li>
+            <li>Formulario de contacto</li>
+            <li>Integración de mapa</li>
+            <li>Botón de WhatsApp</li>
+            <li>Copywriting incluido</li>
+            <li>Asesoría de dominio</li>
+            <li>Certificado SSL</li>
+            <li>Compatible con móvil</li>
+            <li>1 mes de mantenimiento</li>
+          </ul>
+          <a href="#contacto" class="price-cta">Elegir Express</a>
+        </div>
+
+        <div class="price-card featured reveal reveal-delay-1">
+          <h3 class="price-name">Profesional</h3>
+          <div class="price-amount"><span class="currency">$</span>6,499<span class="currency"> MXN</span></div>
+          <p class="price-period">50% anticipo · 50% al finalizar</p>
+          <p class="price-ideal">Para negocios que buscan presencia corporativa.</p>
+          <ul class="price-features">
+            <li>Hasta 5 secciones de contenido</li>
+            <li>Galería de 30 imágenes + 1 video</li>
+            <li>6 ubicaciones en Google Maps</li>
+            <li>Botones CTA estratégicos</li>
+            <li>Botón de WhatsApp</li>
+            <li>Copywriting incluido</li>
+            <li>Certificado SSL</li>
+            <li>Compatible con móvil</li>
+            <li>1 mes de mantenimiento</li>
+          </ul>
+          <a href="#contacto" class="price-cta">Elegir Profesional</a>
+        </div>
+
+        <div class="price-card reveal reveal-delay-2">
+          <h3 class="price-name">Personalizado</h3>
+          <div class="price-amount" style="font-size: clamp(1.5rem, 2.5vw, 2rem);">Cotización</div>
+          <p class="price-period">Términos acordados por proyecto</p>
+          <p class="price-ideal">Para proyectos complejos con necesidades específicas.</p>
+          <ul class="price-features">
+            <li>Secciones ilimitadas</li>
+            <li>Sistemas de control de usuario</li>
+            <li>Funcionalidades a medida</li>
+            <li>Desarrollo personalizado</li>
+            <li>Certificado SSL</li>
+            <li>Compatible con móvil</li>
+            <li>1 mes de mantenimiento</li>
+          </ul>
+          <a href="#contacto" class="price-cta">Solicitar cotización</a>
+        </div>
+      </div>
+
+      <!-- ── E-commerce ── -->
+      <div class="pricing-panel" id="panel-ecommerce">
+        <div class="price-card">
+          <h3 class="price-name">Starter</h3>
+          <div class="price-amount"><span class="currency">$</span>4,499<span class="currency"> MXN</span></div>
+          <p class="price-period">Entrega: 2-3 semanas</p>
+          <p class="price-ideal">Para lanzar tu primera tienda en línea.</p>
+          <ul class="price-features">
+            <li>Hasta 4 secciones clave</li>
+            <li>2 colecciones de producto</li>
+            <li>Hasta 15 productos cargados</li>
+            <li>1 reunión de ajuste</li>
+            <li>Google Analytics + Meta Pixel</li>
+            <li>Pasarela de pago configurada</li>
+            <li>Copywriting incluido</li>
+            <li>1 mes de soporte</li>
+          </ul>
+          <a href="#contacto" class="price-cta">Elegir Starter</a>
+        </div>
+
+        <div class="price-card featured">
+          <h3 class="price-name">Clásico</h3>
+          <div class="price-amount"><span class="currency">$</span>7,499<span class="currency"> MXN</span></div>
+          <p class="price-period">Entrega: 4-6 semanas</p>
+          <p class="price-ideal">Para inventarios en crecimiento.</p>
+          <ul class="price-features">
+            <li>Hasta 8 secciones clave</li>
+            <li>5 colecciones de producto</li>
+            <li>Hasta 50 productos cargados</li>
+            <li>3 reuniones de ajuste</li>
+            <li>Google Analytics + Meta Pixel</li>
+            <li>Pasarela de pago configurada</li>
+            <li>Copywriting incluido</li>
+            <li>1 mes de soporte</li>
+          </ul>
+          <a href="#contacto" class="price-cta">Elegir Clásico</a>
+        </div>
+
+        <div class="price-card">
+          <h3 class="price-name">Avanzado</h3>
+          <div class="price-amount"><span class="currency">$</span>12,999<span class="currency"> MXN</span></div>
+          <p class="price-period">Entrega: 6-8 semanas</p>
+          <p class="price-ideal">La experiencia completa, sin límites.</p>
+          <ul class="price-features">
+            <li>Hasta 12 secciones clave</li>
+            <li>10 colecciones de producto</li>
+            <li>Hasta 150 productos (carga masiva)</li>
+            <li>5 reuniones de ajuste</li>
+            <li>Google Analytics + Meta Pixel</li>
+            <li>Pasarela de pago configurada</li>
+            <li>Copywriting incluido</li>
+            <li>1 mes de soporte</li>
+          </ul>
+          <a href="#contacto" class="price-cta">Elegir Avanzado</a>
+        </div>
+      </div>
+
+      <!-- ── Correos ── -->
+      <div class="pricing-panel" id="panel-correos">
+        <div class="price-card">
+          <h3 class="price-name">Esencial</h3>
+          <div class="price-amount"><span class="currency">$</span>199<span class="currency"> MXN/mes</span></div>
+          <p class="price-period">Setup: $850 MXN (pago único)</p>
+          <p class="price-ideal">Para emprendedores profesionalizando su bandeja.</p>
+          <ul class="price-features">
+            <li>Hasta 2 buzones vinculados a Gmail</li>
+            <li>Almacenamiento delegado a tu Google</li>
+            <li>Seguridad DNS (SPF + DMARC)</li>
+            <li>Filtros y etiquetas automáticas</li>
+            <li>Sincronización con app Gmail</li>
+          </ul>
+          <a href="#contacto" class="price-cta">Elegir Esencial</a>
+        </div>
+
+        <div class="price-card featured">
+          <h3 class="price-name">Crecimiento</h3>
+          <div class="price-amount"><span class="currency">$</span>399<span class="currency"> MXN/mes</span></div>
+          <p class="price-period">Setup: $1,200 MXN (pago único)</p>
+          <p class="price-ideal">Buzones independientes con herramientas avanzadas.</p>
+          <ul class="price-features">
+            <li>Hasta 2 buzones nativos independientes</li>
+            <li>20 GB de almacenamiento por cuenta</li>
+            <li>IA para redacción de correos</li>
+            <li>Tracking de apertura y lectura</li>
+            <li>Conexión IMAP</li>
+            <li>Seguridad DNS (SPF + DMARC)</li>
+          </ul>
+          <a href="#contacto" class="price-cta">Elegir Crecimiento</a>
+        </div>
+
+        <div class="price-card">
+          <h3 class="price-name">Corporativo</h3>
+          <div class="price-amount"><span class="currency">$</span>249<span class="currency"> MXN/usuario/mes</span></div>
+          <p class="price-period">Setup: $1,500 MXN (pago único)</p>
+          <p class="price-ideal">Google Workspace Starter — la suite completa.</p>
+          <ul class="price-features">
+            <li>Google Workspace Starter oficial</li>
+            <li>30 GB en Google Drive</li>
+            <li>Acceso a Meet, Calendar y Docs</li>
+            <li>Administración centralizada</li>
+            <li>Gestión de endpoints</li>
+            <li>Suite colaborativa completa</li>
+          </ul>
+          <a href="#contacto" class="price-cta">Elegir Corporativo</a>
+        </div>
+      </div>
+
+      <p class="pricing-note reveal">Todos los paquetes incluyen certificado SSL, compatibilidad móvil y 1 mes de mantenimiento sin costo.</p>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ────────────────────────────────────────────── -->
+  <section class="about" id="nosotros">
+    <div class="container">
+      <div class="about-inner">
+        <h2 class="about-headline reveal">
+          No hacemos webs.<br>
+          <span class="accent-line">Forjamos activos.</span>
+        </h2>
+
+        <div class="about-body">
+          <p class="reveal">Somos un estudio boutique en Monterrey que trabaja con un número limitado de proyectos cada mes. No perseguimos volumen — perseguimos que cada sitio sea una inversión que genera retorno real.</p>
+
+          <p class="reveal reveal-delay-1">Nacimos con un objetivo claro: eliminar los sitios que son bonitos pero inútiles. Un sitio web no es un folleto digital — es una herramienta de negocio que debe generar leads, ventas directas o posicionamiento de marca.</p>
+
+          <p class="reveal reveal-delay-2">Cada decisión visual tiene un propósito comercial. Cada línea de código la escribimos con intención. Esa es la diferencia entre un sitio web y un activo digital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FAQ ──────────────────────────────────────────────── -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2 class="section-title">Lo que necesitas saber</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-question">
+            <span>¿Cuánto tiempo toma un proyecto?</span>
+            <span class="icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Depende de la complejidad. Un Web Express se entrega en 2-3 semanas, un Profesional en 4-6, y los proyectos personalizados se acuerdan contigo según el alcance. Para e-commerce, los tiempos van de 2 a 8 semanas dependiendo del paquete.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">
+            <span>¿Qué incluye el mes de mantenimiento?</span>
+            <span class="icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Todos los paquetes incluyen 1 mes de mantenimiento sin costo tras el lanzamiento. Esto cubre ajustes menores, optimizaciones de rendimiento y soporte técnico para asegurar que tu sitio funcione perfectamente.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question">
+            <span>¿Por qué Shopify para tiendas en línea?</span>
+            <span class="icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Shopify ofrece la infraestructura más robusta para venta online: pasarelas de pago seguras, gestión de inventario, analytics integrados y escalabilidad sin complicaciones técnicas. Nos permite enfocarnos en lo que importa: diseñar una experiencia que venda.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-3">
+          <button class="faq-question">
+            <span>¿Trabajan con clientes fuera de Monterrey?</span>
+            <span class="icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Sí. Nuestro proceso es completamente remoto y funciona igual de bien a distancia. Colaboramos con negocios de cualquier parte de México y Latinoamérica.</p>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-4">
+          <button class="faq-question">
+            <span>¿Qué necesito para empezar?</span>
+            <span class="icon"></span>
+          </button>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Solo completar el formulario de abajo o escribirnos directamente. Te respondemos en menos de 24 horas con una propuesta clara y sin compromiso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ──────────────────────────────────────────── -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="eyebrow">Contacto</p>
+        <h2 class="section-title">Cuéntanos tu proyecto.</h2>
+      </div>
+
+      <div class="contact-inner">
+        <div class="contact-text reveal">
+          <p>Cada proyecto empieza con una conversación. Cuéntanos qué necesitas y te respondemos en menos de 24 horas con una propuesta clara.</p>
+          <div class="contact-detail">
+            <span>Ubicación</span>
+            <a href="#">Monterrey, Nuevo León, MX</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-1" onsubmit="return false;">
+          <div class="form-group">
+            <label for="contact-name">Nombre</label>
+            <input type="text" id="contact-name" placeholder="Tu nombre completo">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Email corporativo</label>
+            <input type="email" id="contact-email" placeholder="nombre@tuempresa.com">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-interest">Interés</label>
+            <select id="contact-interest">
+              <option value="" disabled selected>Selecciona un servicio</option>
+              <optgroup label="Diseño Web">
+                <option>Web Express / Landing Page</option>
+                <option>Página web profesional</option>
+                <option>Desarrollo web personalizado</option>
+              </optgroup>
+              <optgroup label="E-commerce">
+                <option>E-commerce Starter</option>
+                <option>E-commerce Clásico</option>
+                <option>E-commerce Avanzado</option>
+              </optgroup>
+              <optgroup label="Correos Empresariales">
+                <option>Correo Esencial</option>
+                <option>Correo Crecimiento</option>
+                <option>Correo Corporativo</option>
+              </optgroup>
+              <option value="consultoria">Consultoría / Auditoría</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Mensaje</label>
+            <textarea id="contact-message" rows="3" placeholder="Cuéntanos brevemente sobre tu proyecto"></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ───────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-left">© 2024 Bloodshot.io · Monterrey, NL</span>
+        <span class="footer-center">Elegance often lies in simplicity.</span>
+        <div class="footer-right">
+          <a href="#" target="_blank" rel="noopener">Instagram</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
