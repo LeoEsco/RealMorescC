@@ -530,6 +530,22 @@ body.menu-open .nav-toggle span:nth-child(3) {
   border-bottom: 1px solid var(--line);
 }
 
+.services-grid.services-single {
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+}
+
+.services-grid.services-single .service-card {
+  text-align: center;
+  border-right: none;
+}
+
+.services-grid.services-single .service-link {
+  justify-content: center;
+}
+
 .service-card {
   padding: clamp(2rem, 3vw, 3rem);
   position: relative;
