@@ -525,7 +525,7 @@ body.menu-open .nav-toggle span:nth-child(3) {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -604,7 +604,7 @@ body.menu-open .nav-toggle span:nth-child(3) {
 
 .process-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   border-top: 1px solid var(--line);
 }

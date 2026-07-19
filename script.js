@@ -1,5 +1,5 @@
 /* ============================================================
-   BLOODSHOT.IO — INTERACTIONS
+   MORESC — INTERACTIONS
    Minimal, purposeful JavaScript.
    ============================================================ */
 
@@ -122,34 +122,6 @@
     });
   }
 
-  // ── Pricing Tabs ────────────────────────────────────────
-  var tabButtons = document.querySelectorAll('.tab-btn');
-  var pricingPanels = document.querySelectorAll('.pricing-panel');
-
-  tabButtons.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var targetTab = this.getAttribute('data-tab');
-
-      // Update buttons
-      tabButtons.forEach(function (b) { b.classList.remove('active'); });
-      this.classList.add('active');
-
-      // Update panels
-      pricingPanels.forEach(function (panel) {
-        panel.classList.remove('active');
-      });
-
-      var targetPanel = document.getElementById('panel-' + targetTab);
-      if (targetPanel) {
-        targetPanel.classList.add('active');
-
-        // Trigger reveal for newly visible cards
-        targetPanel.querySelectorAll('.price-card').forEach(function (card) {
-          card.classList.add('revealed');
-        });
-      }
-    });
-  });
 
   // ── FAQ Accordion ───────────────────────────────────────
   var faqItems = document.querySelectorAll('.faq-item');
